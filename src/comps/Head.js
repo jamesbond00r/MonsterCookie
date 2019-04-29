@@ -5,10 +5,10 @@ function Head() {
   return (
     <div >
     <ul className="navbar">
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
+  <li id="raphael"><a href="default.asp">Home</a></li>
+  <li id="donatello"><a href="news.asp">News</a></li>
+  <li id="leonardo"><a href="contact.asp">Contact</a></li>
+  <li id="michelangelo"><a href="about.asp">About</a></li>
 </ul>
     </div>
   );

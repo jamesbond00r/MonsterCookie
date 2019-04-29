@@ -1,5 +1,79 @@
+/* 
+color pallettes
+
+#ED1c24 RED
+#8fd129 GREEN
+#000000 BLACK
+#3d9eff BLUE
+#f2c868 YELLOW BROWN
+#017a5a DARK GREEN-BLUE
+#ff9c07 ORG/YELLOW
+#b899c6 PURPLE
+
+   */
+
+html{
+
+  font-size:100%
+
+}
+
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem; 
+  border: 3px solid #017a5a;
+  }
+
+.wrapperMain{
+
+color: #f2c868;
+
+}
+.wrapperFoot{
+
+color: #8fd129;
+margin-top: 4rem;
+
+}
+.btn-red {
+  background-color: #ED1c24; /*RED */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.btn-blue {
+  background-color: #3d9eff; /* BLUE */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
 .btn-purple {
-  background-color: #351dad; /* Purple */
+  background-color: #b899c6; /* Purple */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.btn-orn {
+  background-color: #ff9c07; /* ORN */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -16,7 +90,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#00def2;
+  background-color:#8fd129;
 }
 
  .navbar li {
@@ -25,7 +99,7 @@
 
  li a {
   display: block;
-  color: white;
+  color: #000000 ;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -33,5 +107,39 @@
 
 /* Change the link color to #111 (black) on hover */
  li a:hover {
-  background-color: #111;
+  background-color: #f2c868;
+}
+
+#raphael{
+  color:#ED1c24 ;
+}
+#donatello{
+  color:#b899c6 ;
+}
+
+#leonardo{
+  color: #3d9eff ;
+}
+#michelangelo{
+  color: #ff9c07 ;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0  4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 550px;
+
 }

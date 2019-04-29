@@ -6,7 +6,10 @@ function Input() {
   return (
     <div>
     <input type="text" name="input" placeholder="Dose Nothing"/>
+    <button className="btn-red" type="button"> CLick Me! </button>
+    <button className="btn-blue" type="button"> CLick Me! </button>
     <button className="btn-purple" type="button"> CLick Me! </button>
+    <button className="btn-orn" type="button"> CLick Me! </button>
     </div>
   );
 }
