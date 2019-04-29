@@ -3,8 +3,13 @@ import React from 'react';
 
 function Head() {
   return (
-    <div>
-    <h1> Hello World </h1>
+    <div >
+    <ul className="navbar">
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
     </div>
   );
 }
