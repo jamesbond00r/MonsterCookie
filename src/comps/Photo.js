@@ -8,9 +8,9 @@ function Photo(props) {
     <div className="row"> 
   <div className="column">
 
-    <img src={ props.imgUrl}/>
-    <h1>{props.name}</h1>
-    <p>{props.recipes}</p>
+    <img style={{display: props.imgUrl ? "block" : "none"}} src={ props.imgUrl}/>
+    <h1 style={{display: props.name ? "block" : "none"}}>{props.name}</h1>
+    <p style={{display: props.imgUrl ? "block" : "none"}}>{props.recipes}</p>
     
     <Input />
     

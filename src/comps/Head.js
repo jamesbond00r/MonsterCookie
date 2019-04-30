@@ -5,6 +5,7 @@ function Head() {
   return (
 <div>
   	<h1 className="pizza">Pizza App!</h1>
+  	<h2 className="pizza">And other food I guess</h2>
 <div id="jumbo">
 
 <div>
