@@ -14,8 +14,9 @@ color pallettes
 
 html{
 
-  font-size:100%
+  font-size:100%;
 
+ 
 }
 
 
@@ -26,11 +27,12 @@ body {
   line-height: 1.7;
   padding: 3rem; 
   border: 3px solid #017a5a;
+
   }
 
 .wrapperMain{
 
-color: #f2c868;
+background-color: #f2c868;
 
 }
 .wrapperFoot{
@@ -142,4 +144,30 @@ margin-top: 4rem;
   vertical-align: middle;
   width: 550px;
 
+}
+
+
+#jumbo {
+  background-image:url("https://images.pexels.com/photos/218983/pexels-photo-218983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+ );
+
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#jumbotext {
+   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+.box{
+  border: solid black 1px;
 }
