@@ -10,24 +10,36 @@ import Data from './data/data.js';
 
 
 
-function App() {
+class App extends React.Component {
+	constructor(){
+		super()
+		this.state = {
+			data: Data
+		}
+	}
 
-	const photoComponents = Data.map(data => {
+
+	render(){
+
+		const photoComponents = this.state.data.map(data => {
 		return (
-			<Photo name={data.name} imgUrl={data.imgUrl} recipes={data.recipes} />
+			<Photo key={data.id} name={data.name} imgUrl={data.imgUrl} recipes={data.recipes} />
 			)
 	})
 
-  return (
-    <div >
-    <Head />
-    <Main />
-<div>
-   {photoComponents}
-</div>
-    <Footer />
-    </div>
-  );
-}
+		return(
+
+			<div >
+				<Head />
+				<Main />
+			<div>
+				{photoComponents}
+			</div>
+				<Footer />
+			</div>
+)}}
+
+
+
 
 export default App;
