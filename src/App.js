@@ -14,18 +14,18 @@ class App extends React.Component {
 	constructor(){
 		super()
 		this.state = {
-			data: Data
+			data: Data,
+			
+
 		}
+	
+
+
 	}
 
 
 	render(){
 
-		const photoComponents = this.state.data.map(data => {
-		return (
-			<Photo key={data.id} name={data.name} imgUrl={data.imgUrl} recipes={data.recipes} />
-			)
-	})
 
 		return(
 
@@ -33,7 +33,7 @@ class App extends React.Component {
 				<Head />
 				<Main />
 			<div>
-				{photoComponents}
+				<Photo />
 			</div>
 				<Footer />
 			</div>
