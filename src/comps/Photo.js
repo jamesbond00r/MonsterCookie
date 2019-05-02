@@ -7,12 +7,15 @@ class Photo extends React.Component {
     super()
     this.state = {
       data: Data,
-      like: 0
+      like: 0,
+      isLoading: true
 
     }
   this.handleClick = this.handleClick.bind(this)
  
 }
+
+
 
 handleClick(){
  this.setState((prevState) =>{
