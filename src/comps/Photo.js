@@ -46,10 +46,10 @@ handleClick(){
        
       <p style={{display: data.imgUrl ? "block" : "none"}}>{data.recipes}</p>
 
-      <button  className="btn-red" type="button"> Love! </button>
-      <button  onClick={this.handleClick} className="btn-blue" type="button"> Likes! {this.state.like}</button>
-      <button  className="btn-purple" type="button"> Share! </button>
-      <button  className="btn-orn" type="button"> Cowabunga! </button>
+      <button  className="btn-red" type="button "> Love! <i class="fas fa-heart"></i></button>
+      <button  onClick={this.handleClick} className="btn-blue" type="button"> Likes! {this.state.like}<i class="far fa-thumbs-up"></i></button>
+      <button  className="btn-purple" type="button"> Share!<i class="far fa-star"></i> </button>
+      <button  className="btn-orn" type="button"> Cowabunga! <i class="fas fa-pizza-slice"></i></button>
       </div>
     
     
