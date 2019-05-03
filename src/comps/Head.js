@@ -4,8 +4,8 @@ import React from 'react';
 function Head() {
   return (
 <div>
-  	<h1 className="pizza">Pizza App!</h1>
-  	<h2 className="pizza">And other food I guess</h2>
+  	<h1 className="pizza">Pizza Time!<i class="fas fa-pizza-slice fa-spin"></i></h1>
+  	<h2 className="pizza">And other food I guess <i class="fas fa-utensils"></i></h2>
 <div id="jumbo">
 
 <div>
