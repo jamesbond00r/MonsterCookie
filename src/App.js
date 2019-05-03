@@ -7,8 +7,7 @@ import Photo from './comps/Photo.js';
 import Footer from './comps/Footer.js';
 import BtnRed from './comps/BtnRed.js';
 import Data from './data/data.js';
-
-
+import Api from './comps/Api.js';
 
 class App extends React.Component {
 	constructor(){
@@ -35,6 +34,7 @@ class App extends React.Component {
 			<div>
 				<Photo />
 			</div>
+			<Api />
 				<Footer />
 			</div>
 )}}
