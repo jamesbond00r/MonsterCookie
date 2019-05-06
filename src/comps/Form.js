@@ -22,6 +22,7 @@ class Form extends React.Component{
 			<form>
 			<h1>{this.state.firstName}</h1>
 			<input type="text" name="firstName" placeholder="First Name" onChange={this.handleChange} />
+			<button  className="btn-orn" type="button"> Cowabunga! <i class="fas fa-pizza-slice"></i></button>
 			</form>
 			</div>
 

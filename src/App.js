@@ -36,7 +36,7 @@ class App extends React.Component {
 			<div>
 				<Photo />
 			</div>
-			{/*<Api /> */}
+			<Api /> 
 				<Footer />
 			</div>
 )}}

@@ -9,22 +9,37 @@ class Api extends React.Component {
       title:{},
       recipe:{},
       img:{},
-      rId:35382
+      rId:35383
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
  
 }
 
 
 
-handleClick(){
- this.setState((prevState) =>{
-    return{
-      rId: prevState.rId + 1
+handleChange(event){
+ this.setState({rId:event.target.value})
+ this.setState({loading:false})
     }
-    console.log(this.state.rId)
- })
-    }
+ 
+ handleSubmit(event){
+   this.setState({loading:true})
+var key = 'd8ce2d218bfad54c15cefadb00637d1b';
+
+var api = `https://www.food2fork.com/api/get?key=${key}&rId=${this.state.rId}`;
+fetch(api)
+  .then(response => response.json())
+  .then(data =>{
+    this.setState({
+      title: data.recipe.title,
+      loading: false,
+      img: data.recipe.image_url,
+      recipe: data.recipe.ingredients
+    })
+  } )}
+  
+
 
 
 componentDidMount(){
@@ -58,11 +73,17 @@ fetch(api)
  
       <img src={img}/>
       <p>{recipe}</p>
-      <button  className="btn-red" type="button "> Love! <i class="fas fa-heart"></i></button>
-      <button  onClick={this.handleClick} className="btn-blue" type="button"> Likes<i class="far fa-thumbs-up"></i></button>
-      <button  className="btn-purple" type="button"> Share!<i class="far fa-star"></i> </button>
-      <button  className="btn-orn" type="button"> Cowabunga! <i class="fas fa-pizza-slice"></i></button>
- 
+     
+     <div>
+     <form onSubmit={this.handleSubmit}>
+     <label>
+     Recipe Id: 
+     <input type="text" value={this.state.value} onChange={this.handleChange} />
+     </label>
+      <button  onClick={this.handleSubmit} className="btn-blue" type="button"> Recipe</button>
+      </form>
+      </div>
+     
       </div>
       </div>
       </div>
